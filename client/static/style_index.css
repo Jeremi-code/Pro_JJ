@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+
+.parent {
+    border: 5px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    width: 50%;
+  }
+
+img {
+    width: 300px;
+    flex: 1;
+    margin: 10px;
+  }
+    
+button {
+    margin-right: 20px;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    margin-block: 75px;
+    width: 100px;
+    position: relative;
+    left: 50%;
+    color: white;
+    background-color: gray;
+    border: 0px;
+    border-radius: 10px;
+  }
