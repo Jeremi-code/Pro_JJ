@@ -6,22 +6,23 @@
 
   <body>
     <div>
-      <form>
+      <form method="POST">
         <label for="fname">User Name</label>
-        <input type="text" id="fname" name="fname" placeholder="Your name" />
+        <input type="text" id="fname" name="fname" placeholder="Your username" />
         <label for ="email" >Email</label>
-        <input type="text" id="email" name="email" placeholder="your email">
-        <label for="Team">Team</label>
-        <select >
+        <input type="text" id="email" name="email" placeholder="your email" />
+        <label id="team" for="Team">Team</label>
+        <select name="team" size="1">
           <option>Web team</option>
           <option>Mobile team</option>
         </select>
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="your password"/>
+        <input type="password" id="password" name="password" placeholder="your password" />
         <label for="re-password">Re-enter password</label>
-        <input type="password" id="re-password" name="re-password" placeholder="re enter your passsword">
-        <input type="submit" value="Sign up" />
+        <input type="password" id="re-password" name="re-password" placeholder="re-enter your passsword" />
+        <input id="signupbtn" type="button" value="Sign up" onclick="formValues(this.form)"/>
       </form>
     </div>
+    <script src="signUp.js"></script>
   </body>
 </html>
