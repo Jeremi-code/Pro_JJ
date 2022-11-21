@@ -1,27 +1,3 @@
-function addUser(newUser) {
-  axios
-    .request({
-      method: "post",
-      url: "http://localhost:3000/api/interns",
-      data: newUser,
-    })
-    .then((response) => {
-      console.log("user added");
-    })
-    .catch((err) => console.log(err));
-}
-function createUser(username,email,team,password) {
-  const User = {
-    username: username,
-    email: email,
-    team: team,
-    password: password
-  };
-  addUser(User);
-  console.log(User);
-}
-
-
 const form = document.forms[0];
 
 const newUser = {
@@ -82,5 +58,28 @@ function val_password(password,re_password) {
     alert("Password too short")
   }
 
+}
+
+function addUser(newUser) {
+  axios
+    .request({
+      method: "post",
+      url: "http://localhost:3000/api/interns",
+      data: newUser,
+    })
+    .then((response) => {
+      console.log("user added");
+    })
+    .catch((err) => console.log(err));
+}
+function createUser(username,email,team,password) {
+  const User = {
+    username: username,
+    email: email,
+    team: team,
+    password: password
+  };
+  addUser(User);
+  console.log(User);
 }
 
